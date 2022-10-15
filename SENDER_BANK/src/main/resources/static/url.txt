@@ -1,0 +1,39 @@
+HDFC BANK URL
+localhost:7474/hdfc
+
+				/createAccount
+				/createICICIAccount -> for testing outer project call works fine
+				/transferFund -> for money transfer from account to account
+
+PAYTM URL
+localhost:6666/paytm
+				
+				/transfer
+
+
+
+
+ICICI bank URL
+
+localhost:6767/icici
+
+				/createAccount
+				/getAmount/{toAcc} ->  getamountByaccountNumber(toAcc);
+
+
+
+
+/create account json
+{
+    "accountNumber":"accTest",
+    "amount":"4500",
+    "email":"accTest.hdfc@icici.com"
+}
+
+
+/transfer json			
+{
+    "fromAcc":"acc2",
+    "toAcc":"acc4",
+    "amountfromAcc":2000
+}
